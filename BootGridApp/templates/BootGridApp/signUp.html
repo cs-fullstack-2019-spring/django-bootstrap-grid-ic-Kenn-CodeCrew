@@ -1,0 +1,22 @@
+{% extends 'BootGridApp/base.html' %}
+
+{% block content %}
+
+<a href="{% url 'signIn' %}">SIGN IN</a>
+<a href="{% url 'signUp' %}">SIGN UP</a><br>
+<label for="usernameInput2">USERNAME</label>
+<input class="input" id="usernameInput2" type="text"><br>
+
+<label for="passwordInput1">PASSWORD</label>
+<input class="input" id="passwordInput1" type="text"><br>
+
+<label for="passwordInput2">CONFIRM PASSWORD</label>
+<input class="input" id="passwordInput2" type="text"><br>
+
+
+<label for="email">ENTER EMAIL</label>
+<input class="input" id="email" type="text" ><br>
+
+<button>SIGN UP</button><br>
+
+{% endblock content %}

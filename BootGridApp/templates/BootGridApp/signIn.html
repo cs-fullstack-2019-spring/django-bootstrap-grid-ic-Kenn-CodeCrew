@@ -1,0 +1,21 @@
+{% extends 'BootGridApp/base.html' %}
+
+{% block content %}
+
+<a href="{% url 'signIn' %}">SIGN IN</a>
+<a href="{% url 'signUp' %}">SIGN UP</a><br>
+<label for="usernameInput">USERNAME</label>
+<input class="input" id="usernameInput" type="text"><br>
+
+<label for="passwordInput">PASSWORD</label>
+<input class="input" id="passwordInput" type="text"><br>
+
+<label for="checkBoxSignedIn">Keep me Signed In</label>
+<input id="checkBoxSignedIn" type="checkbox" ><br>
+
+<button>SIGN IN</button><br>
+
+<hr>
+<a href="">Forgot Password?</a>
+
+{% endblock content %}
